@@ -1,14 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	card := newCard()
-
-	fmt.Println(card)
-}
-// ♠️ ♣️ ♥️ ♦️
-
-func newCard() string {
-	return "♦️ 5"
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
